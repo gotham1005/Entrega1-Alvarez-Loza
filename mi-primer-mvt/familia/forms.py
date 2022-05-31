@@ -14,6 +14,6 @@ class BuscarPersonasForm(forms.Form):
     palabra_a_buscar = forms.CharField(label="Buscar")
 # a parti de aca es nuevo
 class TrabajoForm(forms.Form):
-    nombreEmpresa = forms.CharField(max_length=100)
-    direccionEmpresa = forms.CharField(max_length=100)
-    rubroEmpresa = forms.CharField(max_length=100)
+    nombreEmpresa = forms.CharField(label='Nombre empresa',max_length=100)
+    direccionEmpresa = forms.CharField(label='Direccion empresa',max_length=100)
+    rubroEmpresa = forms.CharField(label='Rubro empresa',max_length=100)

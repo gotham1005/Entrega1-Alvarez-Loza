@@ -87,6 +87,7 @@ def agregarTrabajo(request):
             nombreEmpresa = form.cleaned_data['nombreEmpresa']
             direccionEmpresa = form.cleaned_data['direccionEmpresa']
             rubroEmpresa = form.cleaned_data['rubroEmpresa']
+            TrabajoForm(nombreEmpresa=nombreEmpresa, direccionEmpresa=direccionEmpresa, rubroEmpresa=rubroEmpresa).save()
 
             return HttpResponseRedirect("/")
     elif request.method == "GET":
@@ -95,3 +96,4 @@ def agregarTrabajo(request):
     else:
         return HttpResponseBadRequest("Error no conzco ese metodo para esta request")
     
+    return render(request, 'familia/form_carga_trabajo.html', {'form': form})
