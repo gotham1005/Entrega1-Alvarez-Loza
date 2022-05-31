@@ -61,12 +61,12 @@ $ pip install django-bootstrap-v5
 windows:
 
 ```PS
-C:\> git clone https://github.com/gotham1005/mi-primer-mvt.git
+C:\> git clone https://github.com/gotham1005/mvt-pyython
 ```
 
 Linux/Mac:
 ```bash
-$ git clone https://github.com/gotham1005/mi-primer-mvt.git
+$ git clone https://github.com/gotham1005/mvt-pyython
 ```
 
 ## Correr el Servidor
